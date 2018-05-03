@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.windows10.superfam.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/navy"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Registration"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Full name" />
+
+        <EditText
+            android:id="@+id/newEmail"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:layout_marginVertical="50dp"/>
+
+</LinearLayout>
