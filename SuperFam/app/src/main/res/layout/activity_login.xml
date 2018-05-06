@@ -39,7 +39,9 @@
         android:layout_width="286dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
 
     <TextView
         android:layout_width="173dp"
@@ -55,7 +57,8 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="textPassword"
-        android:text=""/>
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
 
     <TextView
         android:layout_width="248dp"
