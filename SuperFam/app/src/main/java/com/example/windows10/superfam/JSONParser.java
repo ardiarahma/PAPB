@@ -41,8 +41,7 @@ public class JSONParser {
 
     // function get json from url
     // by making HTTP POST or GET mehtod
-    public JSONObject makeHttpRequest(String url, String method,
-                                      ArrayList params) {
+    public JSONObject makeHttpRequest(String url, String method, ArrayList params) {
 
         // Making HTTP request
         try {

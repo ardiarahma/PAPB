@@ -85,6 +85,12 @@
         app:tabIndicatorHeight="0dp">
     </android.support.design.widget.TabLayout>
 
+    <com.chabbal.slidingdotsplash.SlidingSplashView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:imageResources="@array/img_id_arr"/>
+
 
 
 

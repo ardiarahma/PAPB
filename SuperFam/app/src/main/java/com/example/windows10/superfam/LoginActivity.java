@@ -1,6 +1,7 @@
 package com.example.windows10.superfam;
 
 import android.os.AsyncTask;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,10 +14,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
+
 public class LoginActivity extends AppCompatActivity {
 
-    EditText email, password;
+    EditText email, password, fullname;
     Button login, register;
+    TabLayout tabLayout;
+    ViewPager mImageViewPager;
 
     String URL = "http://localhost/server/index.php";
 
@@ -30,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
+        mImageViewPager = (ViewPager) findViewById(R.id.pager);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabDots);
+        tabLayout.setupWithViewPager(mImageViewPager, true);
+
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
 
@@ -41,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AttemptLogin attemptLogin = new AttemptLogin();
                 attemptLogin.execute(email.getText().toString(), password.getText().toString(), "");
-                // attemptLogin.execute(editName.getText().toString(),editPassword.getText().toString(),"");
             }
         });
 
@@ -49,20 +57,20 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (i == 0) {
-                    i = 1;
-                    email.setVisibility(View.VISIBLE);
-                    login.setVisibility(View.GONE);
-                    register.setText("CREATE ACCOUNT");
-                } else {
+               // if (i == 0) {
+               //     i = 1;
+               //     email.setVisibility(View.VISIBLE);
+               //     login.setVisibility(View.GONE);
+               //     register.setText("CREATE ACCOUNT");
+               // } else {
 
-                    register.setText("REGISTER");
-                    email.setVisibility(View.GONE);
-                    login.setVisibility(View.VISIBLE);
-                    i = 0;
+               //     register.setText("REGISTER");
+               //     email.setVisibility(View.GONE);
+               //     login.setVisibility(View.VISIBLE);
+               //     i = 0;
 
                     AttemptLogin attemptLogin = new AttemptLogin();
-                    //  attemptLogin.execute(editName.getText().toString(),editPassword.getText().toString(),editEmail.getText().toString());
+                    attemptLogin.execute(fullname.getText().toString(),email.getText().toString(),password.getText().toString());
 
                 }
 
