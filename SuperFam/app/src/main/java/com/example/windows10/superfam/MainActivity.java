@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<ItemData>values;
     private ItemAdapter adapter;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
-                Toast.makeText(getApplicationContext(), values.get(i).itemTitle,
+                Toast.makeText(getApplicationContext(), values.get(i).itemName,
                         Toast.LENGTH_LONG).show();
             }
         });

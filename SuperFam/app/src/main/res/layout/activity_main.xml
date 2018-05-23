@@ -13,6 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SuperFam"
+        android:textStyle="bold"
+        android:textColor="@color/navy"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
 
 </LinearLayout>
