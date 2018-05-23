@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
 import com.bumptech.glide.Glide;
 import com.chabbal.slidingdotsplash.ImageViewPagerAdapter;
 import com.chabbal.slidingdotsplash.OnSetImageListener;
@@ -25,10 +27,14 @@ import java.util.ArrayList;
 
 import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
-//    EditText email, password, fullname;
-//    Button login, register;
+    private EditText email, password;
+    private Button login, register;
+    private RequestQueue requestQueue;
+    private static final String URL = "http://localhost/server/user_control.php";
+    private StringRequest request;
+
 //    TabLayout tabLayout;
 //    //PagerAdapter mImageViewPager;
 
@@ -38,11 +44,16 @@ public class LoginActivity extends AppCompatActivity{
 
 //    int i = 0;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
+
+
+    }
+
+}
 //        //splashDots
 //        SlidingSplashView splashView  = (SlidingSplashView) findViewById(R.id.splash);
 //        splashView.addOnPageChangeListener(this);
@@ -156,4 +167,4 @@ public class LoginActivity extends AppCompatActivity{
 //            Log.d("PageScrollStateChanged", String.valueOf(state));
 
 //        }
-}
+//}
