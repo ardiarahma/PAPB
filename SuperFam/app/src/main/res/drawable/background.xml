@@ -3,8 +3,12 @@
     <gradient
         android:endColor="#9d4adf"
         android:centerColor="#e9859f"
+<<<<<<< HEAD
         android:startColor="#f26c78"
         />
+=======
+        android:startColor="#f26c78" />
+>>>>>>> 368eea89246934a81d1a3df32d6d77f67240e35f
     <padding
         android:left="7dp"
         android:right="7dp"
