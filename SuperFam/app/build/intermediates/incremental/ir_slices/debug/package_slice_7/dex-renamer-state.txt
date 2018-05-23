@@ -1,4 +1,4 @@
-#Wed May 23 22:53:04 ICT 2018
-base.0=D\:\\Kuliah\\SEMESTER 4\\papb\\PAPB\\SuperFam\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+#Thu May 24 01:02:55 ICT 2018
+base.0=C\:\\Users\\W10\\FinalProjectPAPB\\PAPB\\SuperFam\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex

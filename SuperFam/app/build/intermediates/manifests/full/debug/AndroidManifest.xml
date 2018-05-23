@@ -34,13 +34,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.windows10.superfam.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.example.windows10.superfam.LoginActivity" />
         <activity android:name="com.example.windows10.superfam.MyProfile" />
 

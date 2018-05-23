@@ -74,6 +74,6 @@
         android:layout_marginLeft="-10dp"
         android:layout_toRightOf="@+id/addFamilyMenu"
         android:backgroundTint="#FFFFFF"
-        android:src="@drawable/ic_bloc" />
+        android:src="@drawable/ic_bloc"/>
 
 </RelativeLayout>
