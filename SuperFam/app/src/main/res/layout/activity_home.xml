@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:exported="true"
+        tools:context=".MapsActivitySearch">
+
+    </fragment>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_menu" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myLocationMenu"
+        android:layout_marginRight="-10dp"
+        android:layout_toLeftOf="@+id/findFamily"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_list" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/findFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu"
+        android:layout_toLeftOf="@+id/menu"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_cari" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myProfilMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/findFamily"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_user" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addFamilyMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu"
+        android:layout_toRightOf="@+id/menu"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_add" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myLocationMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@+id/addFamilyMenu"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_bloc" />
+
+</RelativeLayout>
