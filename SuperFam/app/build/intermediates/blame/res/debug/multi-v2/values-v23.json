@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\W10\\FinalProjectPAPB\\PAPB\\SuperFam\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Windows 10\\Documents\\Tugas Akhir PAPB\\SuperFam\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\W10\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6f41e92bb0fd707a9189b7f8ef30f173\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Windows 10\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\53afba0a27634a5f16e22be3603d0eb2\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
