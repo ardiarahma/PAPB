@@ -5,70 +5,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context="com.example.windows10.superfam.LoginActivity">
 
-    <TextView
-        android:layout_width="173dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="SuperFam"
-        android:textSize="35dp"
-        android:textAlignment="center"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/navy"
-        android:textStyle="bold" />
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SuperFam"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/navy"
+                android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="102dp"
-        android:layout_height="147dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo" />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="102dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Email address"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/navy"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textEmailAddress"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Email"
+                android:ems="10"
+                />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="286dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="textEmailAddress"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Password"/>
 
-    <TextView
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Password"
-        android:textAlignment="center"
-        android:textColor="@color/navy"/>
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="289dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffff"
+                android:text="@string/ingat"
+                />
 
-    <TextView
-        android:layout_width="248dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Forget password? Click Here!"
-        android:textAlignment="center"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:textColorHint="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/button_bg"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/button_bg"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Forget your password?"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
 
     <LinearLayout
         android:layout_width="323dp"
@@ -77,19 +106,7 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
-        <Button
-            android:id="@+id/login"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_marginLeft="17dp"/>
 
-        <Button
-            android:id="@+id/register"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="Register" />
     </LinearLayout>
 
 </LinearLayout>
